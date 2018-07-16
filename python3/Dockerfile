@@ -14,6 +14,6 @@ RUN apt-get update \
 RUN groupadd -g 1001 gadm && useradd -u 1000 -g gadm -m gadm
 RUN chown -R gadm:gadm /home/gadm
 USER gadm
-WORKDIR /home/gadm
+WORKDIR /home/gadm/python
 
 CMD ["python3"]
